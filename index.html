@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="main.js" defer></script>
+    <title>Note Taking App</title>
+</head>
+<body>
+    <section id="heading" class="container">
+        <h1>Note Taker</h1>
+        <h2>Add a New Note</h2>
+    </section>
+    <section class="container" id="alert">
+        <p>text</p>
+    </section>
+    <section class="container" id="inputs">
+        <div class="title-input">
+            <h3>Title</h3>
+            <input type="text" id="title-content" placeholder="Enter a note title">
+        </div>
+        <div id="note-input">
+            <h3>Note</h3>
+            <textarea id="note-content" placeholder="Enter note text" rows="20"></textarea>
+        </div>
+        <button id="submit">Submit</button>
+    </section>
+    <section class="container" id="notes"></section>
+    <section class="container modal-container">
+        <div class="modal">
+            <div class="top">
+                <h2></h2>
+                <button id="close-modal"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <p></p>
+        </div>
+    </section>
+</body>
+</html>

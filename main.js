@@ -70,7 +70,7 @@ const ui = {
             const note = {
                 id: newNote.dataset.id,
                 title: noteTitle.textContent,
-                content: content.textContent
+                content: noteContent.textContent
             }
             storage.saveNote(note)
         }
@@ -86,6 +86,7 @@ const ui = {
         uiNotes.forEach(note => note.remove())
         const currentNotes = storage.getNotes()
         currentNotes.forEach(note => {
+            console.log(note);
             ui.addNewNote(note.id, note.title, note.content, false)
         })
     },
